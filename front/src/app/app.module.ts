@@ -20,8 +20,8 @@ import {MenuadminModule} from "./menuadmin/menuadmin.module";
         MenugeralComponent,
         MenuadminComponent,
         FooterComponent,
-        UsuarioComponent,
-        NovoUsuarioComponent
+       // UsuarioComponent,
+       // NovoUsuarioComponent
     ],
     imports: [
         BrowserModule,
