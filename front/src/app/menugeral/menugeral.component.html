@@ -1,56 +1,49 @@
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark indigo">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
 
     <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Kaya</a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-    </button>
+    <logo><a class="navbar-brand" href="#">Navbar</a></logo>
 
     <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <links>
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link waves-light" mdbRippleRadius>Features</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link waves-light" mdbRippleRadius>Pricing</a>
             </li>
 
             <!-- Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" dropdown>
 
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">Usuario</a>
+                <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
+                    Basic dropdown<span class="caret"></span>
+                </a>
 
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbRippleRadius href="#">Action</a>
+                    <a class="dropdown-item waves-light" mdbRippleRadius href="#">Another action</a>
+                    <a class="dropdown-item waves-light" mdbRippleRadius href="#">Something else here</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item waves-light" mdbRippleRadius href="#">Separated link</a>
                 </div>
-
             </li>
 
         </ul>
         <!-- Links -->
 
         <!-- Search form -->
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <form class="form-inline  waves-light" mdbRippleRadius>
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
         </form>
-
-    </div>
+    </links>
     <!-- Collapsible content -->
 
-</nav>
+</mdb-navbar>
 <!--/.Navbar-->
-                
-            

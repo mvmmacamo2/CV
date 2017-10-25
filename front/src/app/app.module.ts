@@ -7,18 +7,29 @@ import {MenugeralComponent} from './menugeral/menugeral.component';
 import {MenuadminComponent} from './menuadmin/menuadmin.component';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import {FormsModule} from "@angular/forms";
+import {FooterComponent} from './footer/footer.component';
+import {AppRoutingModule} from "./app.routing.module";
+import {UsuarioComponent} from './menuadmin/usuario/usuario.component';
+import {NovoUsuarioComponent} from './menuadmin/usuario/novo-usuario/novo-usuario.component';
+import {MenuadminModule} from "./menuadmin/menuadmin.module";
 
 @NgModule({
     declarations: [
         AppComponent,
         PaginaInicialComponent,
         MenugeralComponent,
-        MenuadminComponent
+        MenuadminComponent,
+        FooterComponent,
+        UsuarioComponent,
+        NovoUsuarioComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
-         MDBBootstrapModule.forRoot()
+        MenuadminModule,
+        AppRoutingModule,
+
+        MDBBootstrapModule.forRoot()
     ],
     schemas: [NO_ERRORS_SCHEMA],
     providers: [],
