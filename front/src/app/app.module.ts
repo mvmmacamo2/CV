@@ -12,6 +12,7 @@ import {AppRoutingModule} from "./app.routing.module";
 import {UsuarioComponent} from './menuadmin/usuario/usuario.component';
 import {NovoUsuarioComponent} from './menuadmin/usuario/novo-usuario/novo-usuario.component';
 import {MenuadminModule} from "./menuadmin/menuadmin.module";
+ import { UsuariosComponent } from './usuario/usuarios/usuarios.component';
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import {MenuadminModule} from "./menuadmin/menuadmin.module";
         MenugeralComponent,
         MenuadminComponent,
         FooterComponent,
+        UsuariosComponent,
        // UsuarioComponent,
        // NovoUsuarioComponent
     ],

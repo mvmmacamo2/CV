@@ -13,6 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+
+Route::get('/usuarios', ['uses'=>'UsersController@getAllUsers']);
+// Route::get('/usuarios', ['uses'=>'UsersController@getAllUsers'])->middleware('auth.jwt');
+Route::post('/usuario', ['uses'=>'UsersController@saveUser']);
+Route::put('/usuario/{id}', ['uses'=>'UsersController@updateUser']);
+Route::delete('/usuario/{id}', ['uses'=>'UsersController@deleteUser']);
+Route::get('/usuario/{id}', ['uses'=>'UsersController@getUser'])->middleware('auth.jwt');;
